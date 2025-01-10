@@ -11,8 +11,17 @@ abstract class ViewComponent
 {
     protected string $template;
 
+    protected function isValid(): bool
+    {
+        return true;
+    }
+
     public function __toString(): string
     {
+        if (!$this->isValid()) {
+            return '';
+        }
+
         ob_start();
 
         $view = $this;
