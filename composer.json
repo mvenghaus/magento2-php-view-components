@@ -1,0 +1,43 @@
+{
+    "name": "mvenghaus/magento2-php-view-components",
+    "description": "An integration of simple view components similar to those found in other template engines.",
+    "type": "magento2-module",
+    "keywords": [
+        "magento",
+        "magento2",
+        "php",
+        "view",
+        "components",
+        "template"
+    ],
+    "homepage": "https://github.com/mvenghaus/magento2-php-view-components",
+    "support": {
+        "issues": "https://github.com/mvenghaus/magento2-php-view-components/issues",
+        "source": "https://github.com/mvenghaus/magento2-php-view-components"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcus Venghaus",
+            "email": "marcus@venghaus.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Mvenghaus\\PhpViewComponents\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
