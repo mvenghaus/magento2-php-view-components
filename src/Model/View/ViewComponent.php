@@ -32,4 +32,14 @@ abstract class ViewComponent
     {
         return ObjectManager::getInstance()->get($className);
     }
+
+    /**
+     * @template T
+     * @param class-string<T> $className
+     * @return T
+     */
+    public static function viewModel(string $className)
+    {
+        return ObjectManager::getInstance()->get($className);
+    }
 }

@@ -17,7 +17,7 @@ trait HasSlot
 
     private static array $slotStack = [];
 
-    public function slot(): string
+    public static function slot(): string
     {
         return self::SLOT_SEPARATOR;
     }
