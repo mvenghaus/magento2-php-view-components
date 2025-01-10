@@ -22,14 +22,14 @@ trait HasSlot
         return self::SLOT_SEPARATOR;
     }
 
-    public function start(): self
+    public function open(): self
     {
         $this->slotMode = self::SLOT_MODE_OPEN;
 
         return $this;
     }
 
-    public function stop(): self
+    public function close(): self
     {
         $this->slotMode = self::SLOT_MODE_CLOSE;
 
